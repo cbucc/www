@@ -1,0 +1,1 @@
+var curTag=0,$funcNav=$(".func_nav"),$funcGroups=$(".func_group");$funcNav.on("click",".func_nav_item",function(){var n=$(this).index();n!==curTag&&(0==curTag?$(".func_nav_chooseline").addClass("right"):$(".func_nav_chooseline").removeClass("right"),curTag=n,$funcGroups.eq(1-n).hide(),$funcGroups.eq(n).show())});
